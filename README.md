@@ -12,6 +12,42 @@
 Snakemake is a Workflow Management System developed specifically for data analysis pipelines.
 
 
+### Setting up conda enviornment
+In order to install ```anaconda``` go to [download page](https://www.anaconda.com/download)
+ 
+Download the installer link by typing in your terminal
+
+```
+wget https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh
+
+```
+
+you will see something like this 
+
+```
+--2024-03-04 11:46:50--  https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh
+Resolving repo.anaconda.com (repo.anaconda.com)... 104.16.130.3, 104.16.131.3, 2606:4700::6810:8203, ...
+Connecting to repo.anaconda.com (repo.anaconda.com)|104.16.130.3|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1045673900 (997M) [application/octet-stream]
+Saving to: ‘Anaconda3-2024.02-1-Linux-x86_64.sh’
+
+Anaconda3-2024.02-1 100%[===================>] 997.23M   294MB/s    in 3.5s    
+
+2024-03-04 11:46:54 (287 MB/s) - ‘Anaconda3-2024.02-1-Linux-x86_64.sh’ saved [1045673900/1045673900]
+```
+Then downlaod is complete. 
+
+If you do ```ls``` on your terminal you should see the installer script ```Anaconda3-2024.02-1-Linux-x86_64.sh ```
+ 
+To active the script simply do
+
+```
+chmod +x Anaconda3-2024.02-1-Linux-x86_64.sh
+```
+
+
+
 Now, for a simple workflow, and if everything you need to use is in one language (e.g., Python or R), you might just put this all in one script:
 
 ```
