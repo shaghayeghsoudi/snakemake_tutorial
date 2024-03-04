@@ -12,10 +12,12 @@
 Snakemake is a Workflow Management System developed specifically for data analysis pipelines.
 
 
-### Setting up conda enviornment
+### Set up conda enviornment
+- Download Anaconda:
 In order to install ```anaconda``` go to [download page](https://www.anaconda.com/download)
  
-Download the installer link by typing in your terminal
+Download the installer for your operating system (e.g., Windows, MacOS, or Linux)
+I am using Linux, right click on your desired 
 
 ```
 wget https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh
