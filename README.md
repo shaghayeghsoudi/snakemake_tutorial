@@ -48,7 +48,28 @@ To active the script simply do
 chmod +x Anaconda3-2024.02-1-Linux-x86_64.sh
 ```
 
+## Create snakemake conda enviornment
 
+It's a good practice to create a separate conda environment for each project to manage dependencies cleanly. You can create a new environment using the following command:
+
+1. Create a conda environment
+
+```
+conda create -n snakemake python=3.8
+```
+
+2. stall Snakemake:
+
+```
+conda install -c conda-forge -c bioconda snakemake
+```
+
+
+This command installs Snakemake from the conda-forge and bioconda channels, which are community-maintained channels that provide packages for various bioinformatics tools and libraries.
+
+After following these steps, Snakemake should be installed in your conda environment, and you can start using it for your workflow management needs.
+
+Remember to activate your conda environment ```(conda activate my_env)``` whenever you want to work with Snakemake or any other tools installed in that environment.
 
 Now, for a simple workflow, and if everything you need to use is in one language (e.g., Python or R), you might just put this all in one script:
 
